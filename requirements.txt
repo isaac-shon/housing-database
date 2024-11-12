@@ -1,0 +1,13 @@
+dash
+dash_bootstrap_components
+dash-tools
+pandas
+geopandas
+plotly
+folium 
+matplotlib 
+mapclassify
+requests
+shapely
+gunicorn
+ploomber-cloud
