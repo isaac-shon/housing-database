@@ -15,7 +15,7 @@ community_district_url = 'https://data.cityofnewyork.us/resource/dbdt-5s7j.json'
 def fetch_data(url, params=None):
     '''
     This function fetches data from the urls defined above and stores
-    them in a pandas datafrome. The function als returns a message 
+    them in a pandas datafrome. The function also returns a message 
     if the online data retrieval was a success.
     '''
     response = requests.get(url)
@@ -33,15 +33,18 @@ community_district_df = fetch_data(community_district_url)
 project_level_url = 'https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/nychdb_23q4_csv.zip'
 response = requests.get(project_level_url)
 
-zip_path = os.path.join('src','data', f'project_level_database.zip')
+zip_path = os.path.join('data', f'project_level_database.zip')
     
 with open(zip_path, 'wb') as f:
     f.write(response.content)
         
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-    zip_ref.extractall('src\\data\\')
+    zip_ref.extractall('data')
 
-project_df = pd.read_csv('src\\data\\HousingDB_post2010.csv')
+# Remove the zip file
+os.remove(zip_path)
+
+project_df = pd.read_csv('data\\HousingDB_post2010.csv')
 
 
 #----------------------------------------------------------#
@@ -92,13 +95,14 @@ project_df['Days_File_Permit'] = (project_df['DatePermit'] - project_df['DateFil
 # SAVE DATA TO DATA FOLDER:
 
 if community_district_df is not None:
-    community_district_df.to_csv(os.path.join('src', 'data', 'community_district_data.csv'))
+    community_district_df.to_csv(os.path.join('data', 'community_district_data.csv'))
+    os.remove(os.path.join('data', 'HousingDB_post2010.csv'))
     print("community_district_df saved successfully as CSV.")
 else:
     print("Failed to save community_district_df.")
 
 if project_df is not None:
-    project_df.to_csv(os.path.join('src', 'data', 'project_level_data.csv'), index=False)
+    project_df.to_csv(os.path.join('data', 'project_level_data.csv'), index=False)
     print("Project-level data saved successfully as CSV.")
 else:
     print("Failed to save project-level data as CSV.")
