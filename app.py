@@ -18,7 +18,7 @@ app_ui = ui.page_navbar(
     title="My Multipage App"
 )
 
-# Define the app server (optional)
+# Define the app server
 def server(input, output, session):
     pass
 
