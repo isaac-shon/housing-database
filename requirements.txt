@@ -1,6 +1,4 @@
-dash
-dash_bootstrap_components
-dash-tools
+shiny
 pandas
 geopandas
 plotly
@@ -9,5 +7,3 @@ matplotlib
 mapclassify
 requests
 shapely
-gunicorn
-ploomber-cloud
