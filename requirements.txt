@@ -1,9 +1,10 @@
 shiny
+shinywidgets
+shinyswatch
 pandas
 geopandas
 plotly
-folium 
 matplotlib 
-mapclassify
 requests
 shapely
+pydeck==0.8.0

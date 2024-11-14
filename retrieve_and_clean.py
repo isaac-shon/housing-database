@@ -58,9 +58,9 @@ for col in community_district_df.columns:
 
 # Create borough column:
 community_district_df['borough'] = community_district_df['commntydst'].apply(
-    lambda x: 'Bronx' if str(x).startswith('1') else
-              'Brooklyn' if str(x).startswith('2') else
-              'Manhattan' if str(x).startswith('3') else
+    lambda x: 'Bronx' if str(x).startswith('2') else
+              'Brooklyn' if str(x).startswith('3') else
+              'Manhattan' if str(x).startswith('1') else
               'Queens' if str(x).startswith('4') else
               'Staten Island' if str(x).startswith('5') else
               'Unknown'  # If unknown
