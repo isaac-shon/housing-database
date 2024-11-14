@@ -1,10 +1,7 @@
-shiny
-shinywidgets
-shinyswatch
+streamlit
 pandas
 geopandas
 plotly
+pydeck
 matplotlib 
-requests
 shapely
-pydeck==0.8.0
