@@ -1,5 +1,6 @@
-import streamlit as st
 # streamlit run Homepage.py
+import streamlit as st
+
 st.set_page_config(
     page_title="Welcome",
     page_icon="👋",
@@ -12,7 +13,7 @@ st.sidebar.success("Select a page above.")
 st.markdown(
     """
     This web app is my first data visualization app built using Streamlit. On this web app, I present a series of data visualizations and maps using the NYC Department of City Planning’s (DCP) Housing Database. 
-    You can navigate through this app using the navigation options on the sidebar. At the bottom of this home page, you can see the data and raw code used in this project.
+    At the bottom of this home page, you can see the data and raw code used in this project.
 
     **👈 Select a page from the sidebar** to see some of the visualizations made in Python!
 

@@ -96,10 +96,9 @@ In large cities such as New York, it is vital to understand where and how much t
 saw significant changes in its housing landscape, characterized by the demolition and replacement of aging structures, the  repurposing 
 of land, and the revitalization of declining communities.
 
-According to [building classification codes by the  NYC Department of Buildings](https://www.nyc.gov/assets/finance/jump/hlpbldgcode.html), 
-Class A housing generally refers to one-family dwellings typically used exclusively for residential purposes. In this page, we will look at in particular 
+In New York City, Class A housing units generally refer to dwellings typically used exclusively for residential purposes (for example, excluding hotels, lodgings, etc.). In this page, we will look at in particular 
 the net growth in Class A housing units across the city between 2010 and 2023. We can see from the figure below that each year since 2012,
-Class A housing has been growing at a steady pace in the city:
+Class A housing units has been growing at a steady pace in the city:
 """
 
 yearly_totals_fig = px.line(yearly_totals, x='Year', y='Total', title="Net Change in Class-A Housing Units, 2010-2023")

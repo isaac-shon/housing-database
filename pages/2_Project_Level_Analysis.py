@@ -55,8 +55,7 @@ st.plotly_chart(pie_chart_fig)
 """
 Obtaining permits is a necessary step in the construction and building modification process since they are a tool that ensures projects comply with 
 zoning regulations, codes, and safety standards. However, policymakers, economists, and planners recognize that process of obtaining permits and 
-complying with land use regulations can be costly and time-consuming. This can raise the costs of modifying existing structures and producing housing,
-thereby hindering the growth of housing supply.
+complying with land use regulations can be costly and time-consuming. This can raise the costs of housing production and hinder the growth of housing supply.
 
 One set of natural questions we could ask with our data is, "how long has it typically taken for a project to be permitted once it has been filed?"
 Understanding the timeline to permit approval may highlight whether certain types of projects have advantages in the permitting process. 

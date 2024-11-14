@@ -19,8 +19,7 @@ project_df['DateComplt'] = pd.to_datetime(project_df['DateComplt']).dt.to_period
 project_df = project_df.sort_values(by='DateComplt')
 #--------------------------------------------------------------------------------------------------------------------#
 """
-Explore the interactive maps below to see when and where projects were completed each month. Use the scroller to navigate through different time
-periods!
+Explore the interactive maps below to see when and where projects were completed in the city. Use the scroller to navigate any month between January 2010 and January 2024!
 """
 fig = px.density_mapbox(
     project_df,
