@@ -72,7 +72,7 @@ st.plotly_chart(Days_File_Permit_Box)
 """
 Alternatively, one could also ask, "how long does it take for a project to be completed once it has been permitted?" We can see from the following boxplot
 that demolition projects are typically recorded to be completed on the date the project it is permitted. Additionally, it appears that new construction
-projects take slightly longer to complete than alteration projects (with median a time of 725 and 821 days, respectively):
+projects take slightly longer to complete than alteration projects (with median a time of 821 and 725 days, respectively):
 """
 
 Days_Perm_Comp = px.box(project_df, x='Days_Perm_Comp', y='Job_Type', color = 'Job_Type',
