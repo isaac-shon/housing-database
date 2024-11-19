@@ -7,3 +7,4 @@ The NYC Department of City Planning’s (DCP) Housing Database and contains all 
 - Plots describing how long it takes for projects to receive permits and complete.
 - Interactive maps showing where housing growth occured and when projects completed.
 
+![](https://raw.githubusercontent.com/isaac-shon/housing-database/refs/heads/main/assets/screenshot.png)
